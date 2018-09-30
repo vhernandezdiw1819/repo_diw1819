@@ -1,79 +1,124 @@
 <!doctype html>
 <html>
+
 <head>
-    <title>Page title</title>
+  <title>Page title</title>
 </head>
+
 <body>
+  <header>
+    <h1>vhernandezdiw1819</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Acerca de</a></li>
+      <li><a href="#">Archivos</a></li>
+      <li><a href="#">Contacto</a></li>
+      <li class="subscribe"><a href="#">Subscribe via. RSS</a></li>
+    </ul>
+  </nav>
+  <section id="intro">
     <header>
-        <h1>vhernandezdiw1819</h1>
+      <h2>¿Te gustan las flores tanto como nosotros?</h2>
     </header>
-    <nav>
+    <p>Te lo voy a detallar</p>
+  </section>
+  <section>
+    <article class="blogPost">
+      <header>
+        <h2>Este es el título de una publicación de blog</h2>
+        <p>Publicado en <time datetime="2009-06-29T23:31:45+01:00">June 29th 2009</time> por <a href="#">vhernandez</a> - <a href="#comments">3 comentarios</a></p>
+      </header>
+      <p>Seguimos detallando</p>
+    </article>
+  </section>
+  <section id=”comments”>
+    <header>
+      <h3>Comentarios</h3>
+    </header>
+    <article>
+      <header>
+        <a href=”#”>George Washington</a> on <time datetime=”2009-06-29T23:35:20+01:00″>June 29th 2009 at 23:35</time>
+      </header>
+      <p>Presidente ...</p>
+    </article>
+    <article>
+      <header>
+        <a href=”#”>Benjamin Franklin</a> on <time datetime=”2009-06-29T23:40:09+01:00″>June 29th 2009 at 23:40</time>
+      </header>
+      <p>Presidente ...</p>
+    </article>
+  </section>
+  <form action=”#” method=”post”>
+    <h3>Publicar un comentario</h3>
+    <p>
+      <label for=”name”>Nombre</label>
+      <input name=”name” id=”name” type=”text” required />
+    </p>
+    <p>
+      <label for=”email”>E-mail</label>
+      <input name=”email” id=”email” type=”email” required />
+    </p>
+    <p>
+      <label for=”website”>Web</label>
+      <input name=”website” id=”website” type=”url” />
+    </p>
+    <p>
+      <label for=”comment”>Comentario</label>
+      <textarea name=”comment” id=”comment” required></textarea>
+    </p>
+    <p><input type=”submit” value=”Post comment” /></p>
+  </form>
+  <aside>
+    <section>
+      <header>
+        <h3>Categorias</h3>
+      </header>
       <ul>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Acerca de</a></li>
-        <li><a href="#">Archivos</a></li>
-        <li><a href="#">Contacto</a></li>
-        <li class="subscribe"><a href="#">Subscribe via. RSS</a></li>
+        <li><a href="#">Lorem ipsum dolor</a></li>
+        <li><a href="#">Sit amet consectetur</a></li>
       </ul>
-    </nav>
-    <section id="intro">
-        <header>
-          <h2>¿Te gustan las flores tanto como nosotros?</h2>
-        </header>
-        <p>Te lo voy a detallar</p>
     </section>
     <section>
-      <article class="blogPost">
-        <header>
-         <h2>Este es el título de una publicación de blog</h2>
-         <p>Publicado en <time datetime="2009-06-29T23:31:45+01:00">June 29th 2009</time> por <a href="#">vhernandez</a> - <a href="#comments">3 comentarios</a></p>
-        </header>
-        <p>Seguimos detallando</p>
-      </article>
+      <header>
+        <h3>Archivos</h3>
+      </header>
+      <ul>
+        <li><a href="#">Septiembre 2018</a></li>
+        <li><a href="#">Octubre 2018</a></li>
+      </ul>
     </section>
-    <section id=”comments”>
-        <header>
-          <h3>Comentarios</h3>
-        </header>
-          <article>
-            <header>
-              <a href=”#”>George Washington</a> on <time datetime=”2009-06-29T23:35:20+01:00″>June 29th 2009 at 23:35</time>
-            </header>
-              <p>Presidente ...</p>
-          </article>
-          <article>
-            <header>
-              <a href=”#”>Benjamin Franklin</a> on <time datetime=”2009-06-29T23:40:09+01:00″>June 29th 2009 at 23:40</time>
-            </header>
-              <p>Presidente ...</p>
-          </article>
-        </section>
-        <form action=”#” method=”post”>
-          <h3>Publicar un comentario</h3>
-          <p>
-            <label for=”name”>Nombre</label>
-            <input name=”name” id=”name” type=”text” required />
-          </p>
-          <p>
-            <label for=”email”>E-mail</label>
-            <input name=”email” id=”email” type=”email” required />
-          </p>
-          <p>
-            <label for=”website”>Web</label>
-            <input name=”website” id=”website” type=”url” />
-          </p>
-          <p>
-            <label for=”comment”>Comentario</label>
-            <textarea name=”comment” id=”comment” required></textarea>
-          </p>
-          <p><input type=”submit” value=”Post comment” /></p>
-        </form>
-    <aside>
-        <p>bara lateral</p><!-- Sidebar -->
-    </aside>
-    <footer>
-        <p>Pie de pagina</p><!-- Footer -->
-    </footer>
+  </aside>
+  <footer>
+    <div>
+    			<section id="About">
+    				<header>
+    					<h3>Acerca de </h3>
+    				</header>
+    				<p>vhernandez</p>
+    			</section>
+    			<section id="blogroll">
+    				<header>
+    					<h3>Blogroll</h3>
+    				</header>
+    				<ul>
+    					<li><a href="#">NETTUTS+</a></li>
+    					<li><a href="#">FreelanceSwitch</a></li>
+    				</ul>
+    			</section>
+    			<section id="popular">
+    				<header>
+    					<h3>Populares</h3>
+    				</header>
+    				<ul>
+    					<li><a href="#">This is the title of a blog post</a></li>
+    					<li><a href="#">Lorem ipsum dolor sit amet</a></li>
+    				</ul>
+    			</section>
+    		</div>
+  </footer>
 
 </body>
+
 </html>
