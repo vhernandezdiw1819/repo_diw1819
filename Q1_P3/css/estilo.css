@@ -11,7 +11,7 @@ header, footer, aside, nav, article {
 
 body {
   margin: 0 auto;
-  width: 940px;
+  width: 100%;
   font: 13px/22px Helvetica, Arial, sans-serif;
   background: #f0f0f0;
 }
@@ -19,13 +19,13 @@ body {
 h2 {
   font-size: 28px;
   line-height: 44px;
-  padding: 22px 0;
+  padding: 2% 0;
 }
 
 h3 {
   font-size: 18px;
   line-height: 22px;
-  padding: 11px 0;
+  padding: 1% 0;
 }
 
 p {
@@ -36,12 +36,12 @@ nav {
   position: absolute;
   left: 0;
   width: 100%;
-  background: url(“../img/nav_background”);
+  background: url("../img/nav_background");
 }
 
 nav ul {
   margin: 0 auto;
-  width: 940px;
+  width: 85%;
   list-style: none;
 }
 
@@ -72,15 +72,14 @@ nav ul li.subscribe a {
   margin-left: 22px;
   padding-left: 33px;
   text-align: left;
-  background: url(“../img/rss.png”) left center no-repeat;
+  background: url("../img/rss.png") left center no-repeat;
 }
 
 #intro {
   margin-top: 66px;
   padding: 44px;
   background: #467612 url("../img/intro_flower.png") repeat-x;
-  background: #467612 url(“../img/intro_background.png”) top left (287px 100%) repeat-x,
-    url(“../img/intro_flower.png”) top right (653px 100%) no-repeat;
+  background: #467612 url("../img/intro_background.png") top left (287px 100%) repeat-x, url("intro_flower.png") top right (653px 100%) no-repeat;
   background-size: 100%;
   border-radius: 22px;
   /* Background-size not implemented yet */
@@ -111,17 +110,21 @@ nav ul li.subscribe a {
 
 #content {
   display: table;
+  width: 70%;
+  margin-left: 12%;
 }
 
 #mainContent {
   display: table-cell;
-  width: 620px;
+  width: 70%;
+  margin-left: 12%;
   padding-right: 22px;
 }
 
 aside {
   display: table-cell;
   width: 300px;
+  background: url("../img/sidebar_background.png") top left;
 }
 
 .blogPost div {
@@ -152,77 +155,77 @@ aside {
   box-shadow: 3px 3px 7px #777;
   -webkit-box-shadow: 3px 3px 7px #777;
 }
-section#comments article:nth-child(2n+1) {
-padding: 21px;
-background: #E3E3E3;
-border: 1px solid #d7d7d7;
 
-/* Border-radius not implemented yet */
--moz-border-radius: 11px;
--webkit-border-radius: 11px;
+section#comments article:nth-child(2n+1) {
+  padding: 21px;
+  background: #E3E3E3;
+  border: 1px solid #d7d7d7;
+  /* Border-radius not implemented yet */
+  -moz-border-radius: 11px;
+  -webkit-border-radius: 11px;
 }
+
 #comments article header a {
-	display: block;
-	font-weight: bold;
-	color: #000;
+  display: block;
+  font-weight: bold;
+  color: #000;
 }
 
 #comments article header a:hover {
-	text-decoration: none;
+  text-decoration: none;
 }
 
-
 aside section {
-	margin: 22px 0 0 22px;
-	padding: 11px 22px;
-	background: url("../img/sidebar_section_background.png") repeat-x;
-	-moz-border-radius: 11px;
-	-webkit-border-radius: 11px;
+  margin: 22px 0 0 22px;
+  padding: 11px 22px;
+  background: url("../img/sidebar_section_background.png") repeat-x;
+  -moz-border-radius: 11px;
+  -webkit-border-radius: 11px;
 }
 
 footer {
-	position: absolute;
-	left: 0;
-	width: 100%;
-	background: #222;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  background: #222;
 }
 
 footer div {
-	display: table;
-	margin: 0 auto;
-	padding: 44px 0;
-	width: 940px;
-	color: #777;
+  display: table;
+  margin: 0 auto;
+  padding: 44px 0;
+  width: 940px;
+  color: #777;
 }
 
 footer div section {
-	display: table-cell;
-	width: 300px;
+  display: table-cell;
+  width: 300px;
 }
 
 footer div #about, footer div #blogroll {
-	padding-right: 20px;
+  padding-right: 20px;
 }
 
 .blogPost header p, .blogPost header p a {
-	font-size: 14px;
-	font-style: italic;
-	color: #777;
+  font-size: 14px;
+  font-style: italic;
+  color: #777;
 }
 
 aside section ul {
-	margin: 0 0 0 22px;
-	list-style: none;
+  margin: 0 0 0 22px;
+  list-style: none;
 }
 
 footer ul {
-	margin: 0 0 0 40px;
-	list-style: square;
-	color: #565656;
+  margin: 0 0 0 40px;
+  list-style: square;
+  color: #565656;
 }
 
 footer ul li a {
-	display: block;
+  display: block;
 }
 
 footer a {
@@ -230,50 +233,50 @@ footer a {
 }
 
 form {
-	margin-top: 21px;
-	padding-top: 22px;
-	border-top: 1px solid #d7d7d7;
+  margin-top: 21px;
+  padding-top: 22px;
+  border-top: 1px solid #d7d7d7;
 }
 
 form p {
-	display: table;
-	margin-bottom: 22px;
-	padding: 0 22px;
+  display: table;
+  margin-bottom: 22px;
+  padding: 0 22px;
 }
 
 form label {
-	display: table-cell;
-	width: 140px;
-	padding-right: 20px;
-	text-align: right;
-	font-weight: bold;
-	vertical-align: top;
+  display: table-cell;
+  width: 140px;
+  padding-right: 20px;
+  text-align: right;
+  font-weight: bold;
+  vertical-align: top;
 }
 
 form input[type="text"], form input[type="email"], form input[type="url"] {
-	display: table-cell;
-	width: 300px;
-	height: 20px;
-	border: 1px solid #d7d7d7;
+  display: table-cell;
+  width: 300px;
+  height: 20px;
+  border: 1px solid #d7d7d7;
 }
 
 form textarea {
-	width: 300px;
-	height: 100px;
-	border: 1px solid #d7d7d7;
+  width: 300px;
+  height: 100px;
+  border: 1px solid #d7d7d7;
 }
 
 form input[type="submit"] {
-	margin-left: 162px;
+  margin-left: 162px;
 }
 
 footer a:hover {
-	color: #FFF;
-	text-decoration: none;
+  color: #FFF;
+  text-decoration: none;
 }
 
 footer h3 {
-	color: #FFF;
+  color: #FFF;
 }
 
 nav ul li a:hover {
@@ -292,8 +295,8 @@ nav ul li.subscribe a {
 }
 
 .blogPost header p a:hover {
-	text-decoration: none;
-	color: #000;
+  text-decoration: none;
+  color: #000;
 }
 
 aside section ul li a {
