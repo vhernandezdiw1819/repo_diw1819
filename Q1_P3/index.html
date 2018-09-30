@@ -17,11 +17,57 @@
       </ul>
     </nav>
     <section id="intro">
-        <p>introduccion</p><!-- Introduction -->
+        <header>
+          <h2>¿Te gustan las flores tanto como nosotros?</h2>
+        </header>
+        <p>Te lo voy a detallar</p>
     </section>
     <section>
-        <p>Area de contenido principal</p><!-- Main content area -->
+      <article class="blogPost">
+        <header>
+         <h2>Este es el título de una publicación de blog</h2>
+         <p>Publicado en <time datetime="2009-06-29T23:31:45+01:00">June 29th 2009</time> por <a href="#">vhernandez</a> - <a href="#comments">3 comentarios</a></p>
+        </header>
+        <p>Seguimos detallando</p>
+      </article>
     </section>
+    <section id=”comments”>
+        <header>
+          <h3>Comentarios</h3>
+        </header>
+          <article>
+            <header>
+              <a href=”#”>George Washington</a> on <time datetime=”2009-06-29T23:35:20+01:00″>June 29th 2009 at 23:35</time>
+            </header>
+              <p>Presidente ...</p>
+          </article>
+          <article>
+            <header>
+              <a href=”#”>Benjamin Franklin</a> on <time datetime=”2009-06-29T23:40:09+01:00″>June 29th 2009 at 23:40</time>
+            </header>
+              <p>Presidente ...</p>
+          </article>
+        </section>
+        <form action=”#” method=”post”>
+          <h3>Publicar un comentario</h3>
+          <p>
+            <label for=”name”>Nombre</label>
+            <input name=”name” id=”name” type=”text” required />
+          </p>
+          <p>
+            <label for=”email”>E-mail</label>
+            <input name=”email” id=”email” type=”email” required />
+          </p>
+          <p>
+            <label for=”website”>Web</label>
+            <input name=”website” id=”website” type=”url” />
+          </p>
+          <p>
+            <label for=”comment”>Comentario</label>
+            <textarea name=”comment” id=”comment” required></textarea>
+          </p>
+          <p><input type=”submit” value=”Post comment” /></p>
+        </form>
     <aside>
         <p>bara lateral</p><!-- Sidebar -->
     </aside>
