@@ -36,7 +36,7 @@ nav {
   position: absolute;
   left: 0;
   width: 100%;
-  background: url(“nav_background”);
+  background: url(“../img/nav_background”);
 }
 
 nav ul {
@@ -72,20 +72,17 @@ nav ul li.subscribe a {
   margin-left: 22px;
   padding-left: 33px;
   text-align: left;
-  background: url(“rss.png”) left center no-repeat;
+  background: url(“../img/rss.png”) left center no-repeat;
 }
 
 #intro {
   margin-top: 66px;
   padding: 44px;
-  background: #467612 url(“intro_background.png”) top left (287px 100%) repeat-x,
-    url(“intro_flower.png”) top right (653px 100%) no-repeat;
+  background: #467612 url("../img/intro_flower.png") repeat-x;
+  background: #467612 url(“../img/intro_background.png”) top left (287px 100%) repeat-x,
+    url(“../img/intro_flower.png”) top right (653px 100%) no-repeat;
   background-size: 100%;
   border-radius: 22px;
-}
-
-#intro {
-  …
   /* Background-size not implemented yet */
   -webkit-background-size: 100%;
   -o-background-size: 100%;
@@ -95,13 +92,16 @@ nav ul li.subscribe a {
   -webkit-border-radius: 22px;
 }
 
-#intro h2, #intro p¬† {
+#intro h2, #intro p {
+  position: relative;
+  z-index: 9999;
   width: 336px;
 }
 
 #intro h2 {
   padding: 0 0 22px 0;
-  font-weight: normal color: #fff;
+  font-weight: normal;
+  color: #fff;
 }
 
 #intro p {
