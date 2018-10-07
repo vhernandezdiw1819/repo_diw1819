@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang=”es”>
+
+<head>
+  <meta charset=”UTF-8″ />
+  <title>Formulario de contacto</title>
+  <link href="css/estilo.css" rel="stylesheet" type="text/css" media="screen" />
+</head>
+
+<body>
+  <section id=”Formulario”>
+    <h1>Enviar mensaje</h1>
+    <form  method="post" enctype="multipart/form-data" name="formu">
+      <fieldset>
+        <label for="nombre">Nombre: </label>
+        <input type="text" name=”nombre” id="nombre" placeholder="Escriba su nombre completo" required="" />
+
+        <label for="correo">Correo: </label>
+        <input type="email" name="correo" id="correo" placeholder="Escriba su correo electronico" required="required" />
+
+        <label for="mensaje">Mensaje: </label>
+        <textarea id="mensaje" name="mensaje" placeholder="Escriba sus comentarios"></textarea>
+
+        <input type="submit" value="Enviar mensaje" />
+
+      </fieldset>
+    </form>
+  </section>
+</body>
+
+</html>
